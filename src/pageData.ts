@@ -1,5 +1,5 @@
 export const pageData = {
-  title: "Shampooing Chébé O'B2A",
+  title: "Soin Capillaire Chébé O’B2A",
   subtitle: "Libérez le Potentiel de vos Cheveux",
   mainVideo: "/main_video.mp4",
   features: [
@@ -7,7 +7,7 @@ export const pageData = {
       icon: "🍃",
       title: "Nutrition",
       description:
-        "Profitez d'une tenue incomparable, d'une nutrition et d'un style qui durent toute la journée.",
+        "Profitez des cheveux en bonne santé ,plus volumineux et plus soyeux.",
     },
     {
       icon: "✨",
@@ -26,17 +26,17 @@ export const pageData = {
     {
       name: "Sophie L.",
       comment:
-        "Le shampooing Chébé O'B2A a complètement transformé mes cheveux. Ils sont plus forts et plus brillants que jamais !",
+        "Le soin capillaire Chébé O’B2A a complètement transformé mes cheveux. Ils sont plus forts et plus brillants que jamais !",
     },
     {
       name: "Marc D.",
       comment:
-        "Je n'aurais jamais cru qu'un produit pourrait faire une telle différence. Le shampooing Chébé O'B2A est incroyable !",
+        "Je n'aurais jamais cru qu'un produit pourrait faire une telle différence. Le soin capillaire Chébé O’B2A est incroyable !",
     },
     {
       name: "Emma R.",
       comment:
-        "Depuis que j'utilise le shampooing Chébé O'B2A, je reçois des compliments sur mes cheveux presque tous les jours.",
+        "Depuis que j'utilise le soin capillaire Chébé O’B2A, je reçois des compliments sur mes cheveux presque tous les jours.",
     },
   ],
   gallery: [
