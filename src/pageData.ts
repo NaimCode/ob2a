@@ -46,5 +46,7 @@ export const pageData = {
     "/image_4.jpg",
     "/image_5.jpg",
     "/image_6.jpg",
+    "/image_7.jpg",
+    "/image_8.jpg",
   ],
 };
