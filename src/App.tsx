@@ -1,4 +1,4 @@
-import { Check, Star } from "lucide-react";
+import { Award, Check, Leaf, ShoppingCart, Star } from "lucide-react";
 import { useState } from "react";
 import { Button } from "./components/ui/button";
 import { Card, CardContent } from "./components/ui/card";
@@ -86,6 +86,24 @@ export default function HairProductLanding() {
                   <p className="max-w-[600px] text-white md:text-xl text-center md:text-left">
                     {pageContent.subtitle}
                   </p>
+                  {/* New: Added rating and sales info */}
+                  <div className="flex items-center justify-center md:justify-start space-x-2">
+                    <div className="flex">
+                      {[...Array(5)].map((_, i) => (
+                        <Star
+                          key={i}
+                          className="h-5 w-5 fill-yellow-400 stroke-yellow-400"
+                        />
+                      ))}
+                    </div>
+                    <span className="text-white font-medium">
+                      (4.8/5 sur 1000+ avis)
+                    </span>
+                  </div>
+                  <p className="text-white text-center md:text-left">
+                    <ShoppingCart className="inline-block mr-2" />
+                    Plus de 10,000 packs vendus !
+                  </p>
                   {/* New: Added promotional text */}
                   <p className="text-yellow-300 font-semibold md:text-lg text-center md:text-left animate-pulse">
                     🎁 Offre spéciale : Un peigne en bambou GRATUIT pour les
@@ -108,6 +126,27 @@ export default function HairProductLanding() {
             </div>
           </div>
         </section>
+
+        {/* New: Added trust badges section */}
+        <section className="w-full py-6 bg-gray-50">
+          <div className="container mx-auto px-4 md:px-6 max-w-6xl">
+            <div className="flex flex-wrap justify-center items-center gap-6">
+              <div className="flex items-center space-x-2">
+                <Award className="h-6 w-6 text-purple-600" />
+                <span className="font-medium">Qualité Premium</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Leaf className="h-6 w-6 text-purple-600" />
+                <span className="font-medium">Naturel</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Check className="h-6 w-6 text-purple-600" />
+                <span className="font-medium">Satisfaction Garantie</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section
           id="caracteristiques"
           className="w-full py-12 md:py-24 lg:py-32 bg-gray-100"
@@ -166,7 +205,7 @@ export default function HairProductLanding() {
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12">
               Galerie
             </h2>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 justify-center items-center">
               {pageContent.gallery.map((image, index) => (
                 <div
                   key={index}
@@ -196,6 +235,15 @@ export default function HairProductLanding() {
                 <p className="max-w-[900px] text-white md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   Commandez maintenant et découvrez la différence O'B2A. Vos
                   cheveux vous remercieront !
+                </p>
+              </div>
+              {/* New: Added urgency elements */}
+              <div className="bg-white bg-opacity-10 rounded-lg p-4 mt-4">
+                <p className="text-white font-bold mb-2">
+                  🔥 Offre à Durée Limitée !
+                </p>
+                <p className="text-white">
+                  Stock très limité ! Dernières unités disponibles !
                 </p>
               </div>
               <Button

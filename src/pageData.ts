@@ -7,7 +7,7 @@ export const pageData = {
       icon: "🍃",
       title: "Nutrition",
       description:
-        "Profitez des cheveux en bonne santé ,plus volumineux et plus soyeux.",
+        "Profitez des cheveux en bonne santé, plus volumineux et plus soyeux.",
     },
     {
       icon: "✨",
